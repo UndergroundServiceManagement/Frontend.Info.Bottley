@@ -5,15 +5,19 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: orange;
   justify-content: stretch;
+  font-size:calc(10px + 2.5vw);
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
+  padding: 2vw;
   padding-bottom: 30vh;
-  background: cover url("assets/BlackSection1.svg");
+  background: center center
+    url('https://raw.githubusercontent.com/Reda1000/bottle/master/assets/BlackSection1.svg');
+  background-size: cover;
+  background-position: bottom;
 }
 
 nav a {
@@ -21,6 +25,7 @@ nav a {
   min-width: 100px;
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 
 .flow {
@@ -28,4 +33,42 @@ nav a {
   flex-direction: row;
   flex: 1;
   flex-wrap: wrap;
+}
+
+.info {
+  flex: 1 0 26%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info__text {
+  padding: 1rem;
+  margin: 0 -3rem;
+}
+
+.info__clip {
+  border: 0.5rem solid white;
+  border-radius: 1.5rem;
+  background: black;
+  margin: 3rem;
+  box-shadow: 5px 5px 15px 15px lightgray;
+}
+
+.info__clip__text {
+  font-size:calc(10px + 0.8vw);
+  color: white;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.section {
+  background-size: cover;
+}
+
+.section--two {
+  padding-top: 500px
 }
