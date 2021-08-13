@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: orange;
+  justify-content: stretch;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 30vh;
+  background: cover url("assets/BlackSection1.svg");
+}
+
+nav a {
+  flex: 0 0 20%;
+  min-width: 100px;
+  text-decoration: none;
+  color: white;
+}
+
+.flow {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+}
