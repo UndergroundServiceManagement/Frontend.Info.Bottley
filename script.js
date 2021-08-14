@@ -1,6 +1,7 @@
 console.log('hello!');
 
 var chartDom = document.getElementById('chart1');
+setTimeout(() => {
 var myChart = echarts.init(chartDom);
 var option;
 
@@ -128,3 +129,4 @@ option = {
 };
 
 option && myChart.setOption(option);
+}, 1000);
