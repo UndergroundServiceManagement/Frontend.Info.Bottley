@@ -48,7 +48,7 @@ nav a {
 }
 
 .info {
-  flex: 1 0 26%;
+  flex: 3 0 26%;
   min-width: 400px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -59,11 +59,21 @@ nav a {
   margin: 1rem;
 }
 
+.fake {
+  height: 1px;
+  flex: 1 0 22%;
+}
+
+.info--double {
+  flex: 3 0 51%;
+}
+
 .info__box {
   border: 0.5rem solid white;
   border-radius: 0.5rem;
   margin: 1rem 4rem;
   box-shadow: 5px 5px 15px 15px lightgray;
+  flex: 1;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -103,12 +113,26 @@ nav a {
   padding-top: 18rem;
 }
 
+.section--three {
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 18rem;
+}
+
 .box--diagram .diagram {
-  background: red; width: 80%; padding-top: 80%; border-radius: 50%; margin: 1rem auto;
+  background: red;
+  width: 80%;
+  padding-top: 80%;
+  border-radius: 50%;
+  margin: 1rem auto;
 }
 
 .box--diagram .legend {
-  display: flex; list-style: none; font-size: 1vw; justify-content: space-between;
+  display: flex;
+  list-style: none;
+  font-size: 1vw;
+  justify-content: space-between;
 }
 
 .box--quote .header {
@@ -125,14 +149,11 @@ nav a {
 }
 
 .box--quote .quote {
-
 }
 
 .box--quote .more {
-
 }
 
 .box--quote .footer {
   display: flex;
-
 }

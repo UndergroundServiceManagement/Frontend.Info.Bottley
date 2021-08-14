@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <script src="script.js"></script>
+  <script src="https://raw.githubusercontent.com/Reda1000/bottle/master/assets/echarts.min.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href='https://raw.githubusercontent.com/Reda1000/bottle/master/assets/Roboto-Regular.ttf' rel='stylesheet'
     type='text/css'>
@@ -15,7 +15,7 @@
   </nav>
   <div class="section flow">
     <div class="info" style="align-self: flex-start">
-      <div class="info__box box--diagram">
+      <div class="info__box box--diagram" id="chart1">
         <h3>Gefühle</h3>
         <sub>In Deutschland von 2019</sub>
         <div class="diagram"></div>
@@ -102,7 +102,7 @@
         </div>
       </div>
     </div>
-    <div class="box info"></div>
+    <div class="box fake"></div>
     <div class="box info">
       <div class="info__box box--quote">
         <div class="header">
@@ -120,12 +120,13 @@
         </div>
       </div>
     </div>
-    <div class="box info"></div>
-    <div class="box info">
-      Das Open-Source Non-Profit Social Network Bottley bietet einen wertungsfreien Raum aus völliger Verbundenheit und Geborgenheit, für diese Menschen.
+    <div class="box fake"></div>
+    <div class="box info info--double">
+      Das Open-Source Non-Profit Social Network Bottley bietet einen wertungsfreien Raum aus völliger Verbundenheit und
+      Geborgenheit, für diese Menschen.
     </div>
-    <div class="box info"></div>
-    <img class="info" src="https://raw.githubusercontent.com/Reda1000/bottle/master/assets/EinsamkeitChart.svg" />
+    <div class="box fake"></div>
+    <img class="info" src="https://raw.githubusercontent.com/Reda1000/bottle/master/assets/BottleyScreen.png" />
   </div>
   <div class="section section--three flow"
     style="background-image: url('https://raw.githubusercontent.com/Reda1000/bottle/master/assets/BlackSection3.svg')">
@@ -173,6 +174,7 @@
   <div class="section section--footer flow"
     style="background-image: url('https://raw.githubusercontent.com/Reda1000/bottle/master/assets/BlackSection5.svg')">
   </div>
+  <script src="script.js"></script>
 
 </body>
 
