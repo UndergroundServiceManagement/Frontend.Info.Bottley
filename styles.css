@@ -6,7 +6,19 @@ body {
   flex-direction: column;
   flex: 1;
   justify-content: stretch;
-  font-size:calc(10px + 2.5vw);
+  font-size: calc(10px + 1.4vw);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
 }
 
 nav {
@@ -37,17 +49,32 @@ nav a {
 
 .info {
   flex: 1 0 26%;
+  min-width: 400px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 1rem;
+}
+
+.info__box {
+  border: 0.5rem solid white;
+  border-radius: 0.5rem;
+  margin: 1rem 4rem;
+  box-shadow: 5px 5px 15px 15px lightgray;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background: white;
 }
 
 .info__text {
   padding: 1rem;
-  margin: 0 -3rem;
+  margin: 0 -2rem;
+  text-align: center;
 }
 
 .info__clip {
@@ -59,7 +86,7 @@ nav a {
 }
 
 .info__clip__text {
-  font-size:calc(10px + 0.8vw);
+  font-size: calc(10px + 0.8vw);
   color: white;
   margin: 0.5rem;
   text-align: center;
@@ -70,5 +97,42 @@ nav a {
 }
 
 .section--two {
-  padding-top: 500px
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 18rem;
+}
+
+.box--diagram .diagram {
+  background: red; width: 80%; padding-top: 80%; border-radius: 50%; margin: 1rem auto;
+}
+
+.box--diagram .legend {
+  display: flex; list-style: none; font-size: 1vw; justify-content: space-between;
+}
+
+.box--quote .header {
+  display: flex;
+}
+.box--quote .header .profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.box--quote .divider {
+  text-align: right;
+  margin: 1rem 0;
+}
+
+.box--quote .quote {
+
+}
+
+.box--quote .more {
+
+}
+
+.box--quote .footer {
+  display: flex;
+
 }
