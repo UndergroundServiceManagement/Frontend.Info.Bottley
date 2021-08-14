@@ -1,7 +1,5 @@
 console.log('hello!');
 
-import * as echarts from 'echarts';
-
 var chartDom = document.getElementById('chart1');
 var myChart = echarts.init(chartDom);
 var option;
