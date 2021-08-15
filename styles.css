@@ -56,7 +56,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .fake {
@@ -91,7 +91,7 @@ nav a {
   border: 0.5rem solid white;
   border-radius: 1.5rem;
   background: black;
-  margin: 3rem;
+  margin: 5vw;
   box-shadow: 5px 5px 15px 15px lightgray;
 }
 
@@ -100,6 +100,10 @@ nav a {
   color: white;
   margin: 0.5rem;
   text-align: center;
+}
+.info__clip__text span {
+  line-height: 120%;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .section {
@@ -135,6 +139,10 @@ nav a {
   justify-content: space-between;
 }
 
+.box--quote {
+  size: 80%;
+}
+
 .box--quote .header {
   display: flex;
 }
@@ -147,11 +155,19 @@ nav a {
   text-align: right;
   margin: 1rem 0;
 }
+.box--quote .divider::before {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid lightskyblue;
+}
 
 .box--quote .quote {
 }
 
 .box--quote .more {
+  background: lightgreen;
+  border-radius: 50%;
+  color: white;
 }
 
 .box--quote .footer {
