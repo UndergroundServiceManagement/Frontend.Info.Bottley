@@ -1,7 +1,7 @@
 console.log('hello!');
 
-var chartDom = document.getElementById('chart1');
-var myChart = echarts.init(chartDom);
+var chartDom = [document.getElementById('chart1'), document.getElementById('chart2'), document.getElementById('chart3')];
+var myChart = chartDom.map(_ => echarts.init(_));
 var option;
 
 option = {
@@ -36,7 +36,35 @@ option = {
   ]
 };
 
-option && myChart.setOption(option);
+option && myChart[0].setOption(option);
+option && myChart[1].setOption(option);
+option && myChart[2].setOption({
+  series: [
+      {
+          type: 'pie',
+          radius: ['40%', '70%'],
+          label: {
+              show: true,
+              position: 'center',
+              fontSize: "50px"
+          },
+          emphasis: {
+              label: {
+                  show: true,
+                  fontSize: '50',
+                  fontWeight: 'bold'
+              }
+          },
+          
+          labelLine: {
+              show: true
+          },
+          data: [
+              {value: 10, name: '10'}
+          ]
+      }
+  ]
+});
 window.onresize = function() {
-  myChart.resize();
+  myChart.map(_ => _.resize());
 };

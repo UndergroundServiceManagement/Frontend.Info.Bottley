@@ -6,9 +6,23 @@ body {
   flex-direction: column;
   flex: 1;
   justify-content: stretch;
-  font-size: calc(10px + 1.4vw);
+  font-size: calc(10px + 1vw);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(24, 24, 24);
+  overflow: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: calc(10px + 1.5vw);
+  }
+}
+
+@media (min-width: 682px) and (max-width: 1038px) {
+  .hide {
+    display: none !important;
+  }
 }
 
 h1,
@@ -19,17 +33,29 @@ h5,
 h6 {
   margin: 0;
   font-weight: 400;
+  margin-bottom: 1rem;
+}
+h1 {
+  background: rgb(24, 24, 24);
+}
+h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.body {
+  background: url('https://raw.githubusercontent.com/Reda1000/bottle/master/assets/BlackSection1.svg');
+  padding: 0;
+  background-size: contain;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   padding: 2vw;
-  padding-bottom: 30vh;
-  background: center center
-    url('https://raw.githubusercontent.com/Reda1000/bottle/master/assets/BlackSection1.svg');
-  background-size: cover;
-  background-position: bottom;
+  background: rgb(24, 24, 24);
 }
 
 nav a {
@@ -41,15 +67,17 @@ nav a {
 }
 
 .flow {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex: 1;
   flex-wrap: wrap;
 }
 
-.info {
-  flex: 3 0 26%;
-  min-width: 400px;
+.info,
+.bubble {
+  flex: 1 0 26%;
+  min-width: 300px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -57,15 +85,36 @@ nav a {
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  font-size: 65%;
+  margin: 3vh 0;
 }
-
-.fake {
-  height: 1px;
-  flex: 1 0 22%;
+.bubble {
+  flex: 1 0 34%;
+  min-width: 500px;
+  min-height: 45vh;
+  margin: 5vh 5vw;
+  font-size: 90%;
 }
-
-.info--double {
-  flex: 3 0 51%;
+.bubble div {
+  margin: 0 6vw;
+}
+@media (max-width: 1389px) {
+  .bubble div {
+    margin: 0 25vw !important;
+  }
+  .bubble a {
+    margin: 0 25vw !important;
+  }
+}
+.bubble h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.bubble a {
+  margin: 0 10vw;
+}
+.bubble a img {
+  width: 100%;
 }
 
 .info__box {
@@ -83,16 +132,17 @@ nav a {
 
 .info__text {
   padding: 1rem;
-  margin: 0 -2rem;
   text-align: center;
+  font-size: 150%;
 }
 
 .info__clip {
   border: 0.5rem solid white;
   border-radius: 1.5rem;
   background: black;
-  margin: 5vw;
+  margin: 0 auto;
   box-shadow: 5px 5px 15px 15px lightgray;
+  width: 50%;
 }
 
 .info__clip__text {
@@ -108,28 +158,57 @@ nav a {
 
 .section {
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section--one {
+  padding: 0;
+  padding-top: 10rem;
 }
 
 .section--two {
   padding: 0;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 18rem;
+  padding-top: 45vw;
 }
 
 .section--three {
   padding: 0;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 18rem;
+  padding-top: 45vw;
+}
+
+.section--four {
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 45vw;
+}
+
+.section--five {
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 45vw;
+}
+
+.box--diagram {
+  margin: 1rem auto;
+  width: 20vw;
+  min-width: 250px;
+  height: 35vh;
+  min-height: 400px;
+  font-size: 150%;
 }
 
 .box--diagram .diagram {
-  background: red;
-  width: 80%;
-  padding-top: 80%;
-  border-radius: 50%;
-  margin: 1rem auto;
+  width: 100%;
+  height: 100%;
+  min-height: 40vh;
 }
 
 .box--diagram .legend {
@@ -156,9 +235,9 @@ nav a {
   margin: 1rem 0;
 }
 .box--quote .divider::before {
-    display: inline-block;
-    content: "";
-    border-top: 1px solid lightskyblue;
+  display: inline-block;
+  content: '';
+  border-top: 1px solid lightskyblue;
 }
 
 .box--quote .quote {
@@ -172,4 +251,16 @@ nav a {
 
 .box--quote .footer {
   display: flex;
+}
+
+.support {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.support li {
+  width: 8vw;
+}
+.support li a img {
+  width: 50%;
 }
