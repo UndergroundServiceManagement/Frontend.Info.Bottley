@@ -172,28 +172,34 @@ nav a {
   padding: 0;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 45vw;
 }
 
 .section--three {
   padding: 0;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 45vw;
 }
 
 .section--four {
   padding: 0;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 45vw;
 }
 
 .section--five {
   padding: 0;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 45vw;
+}
+
+.section__bottle {
+  height: 20vw;
+  width: 20vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('https://raw.githubusercontent.com/Reda1000/bottle/master/assets/Bottle.svg');
+  margin: 12.5vw auto;
 }
 
 .box--diagram {
